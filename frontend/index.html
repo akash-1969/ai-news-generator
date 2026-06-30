@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F&O Copilot</title>
+
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>F&O Copilot</h1>
+
+
+    <input class="stock" id="stockInput" type="text" placeholder="Search stocks..">
+
+    <div class="suggestions">
+        <!-- isme hum suggested div add krege  -->
+    </div>
+
+    <div class="email-section" id="emailSection">
+        <divstyle="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <label class="emaillabel">Email</label>
+            <!-- label is used to give out the label for it  -->
+
+            <input type="email" class="emailinput" placeholder="Enter your email.." id="userEmail">
+
+            <select class="frequency-select" id="frequencySelect">
+                <option value="hourly">Hourly Updates</option>
+                <option value="2hourly">every 2 hours</option>
+                <option value="daily" selected>Daily updates</option>
+            </select>
+
+            <button class="update" id="getUpdatesBtn">Get Updates</button>
+
+        </div>
+    </div>
+
+    <div class="market">
+        <!--  here we have to display all the data to be recived by the backend  -->
+    </div>
+
+    <div id="analysisPanel">
+        
+    </div>
+
+    <!-- <button class="show">ShowChart</button> -->
+    
+
+    <div id="chart"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

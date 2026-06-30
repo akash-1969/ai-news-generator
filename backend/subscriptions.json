@@ -1,0 +1,67 @@
+[
+  {
+    "email": "akashpro249@gmail.com",
+    "stocks": [
+      {
+        "symbol": "TCS.NS",
+        "frequency": "hourly",
+        "addedAt": "2026-06-30T06:20:31.768Z"
+      }
+    ],
+    "subscribedAt": "2026-06-30T06:20:31.768Z"
+  },
+  {
+    "email": "akashshri245@gmail.com",
+    "stocks": [
+      {
+        "symbol": "^NSEI",
+        "frequency": "2hourly",
+        "addedAt": "2026-06-30T17:41:38.457Z",
+        "lsatSent": "2026-06-30T17:41:38.457Z"
+      },
+      {
+        "symbol": "EMCURE.BO",
+        "frequency": "2hourly",
+        "addedAt": "2026-06-30T17:58:46.688Z",
+        "lsatSent": "2026-06-30T17:58:46.688Z"
+      },
+      {
+        "symbol": "HDB",
+        "frequency": "2hourly",
+        "addedAt": "2026-06-30T18:09:18.107Z",
+        "lsatSent": "2026-06-30T18:09:18.107Z"
+      },
+      {
+        "symbol": "RELIANCE.NS",
+        "frequency": "2hourly",
+        "addedAt": "2026-06-30T18:12:09.963Z",
+        "lsatSent": "2026-06-30T18:12:09.964Z"
+      },
+      {
+        "symbol": "PERSISTENT.NS",
+        "frequency": "2hourly",
+        "addedAt": "2026-06-30T18:13:12.608Z",
+        "lsatSent": "2026-06-30T18:13:12.608Z"
+      },
+      {
+        "symbol": "TATACAP.NS",
+        "frequency": "hourly",
+        "addedAt": "2026-06-30T18:24:13.809Z",
+        "lsatSent": "2026-06-30T18:24:13.809Z"
+      }
+    ],
+    "subscribedAt": "2026-06-30T17:41:38.456Z"
+  },
+  {
+    "email": "shrivastavasuraj8@gmail.com",
+    "stocks": [
+      {
+        "symbol": "EMCURE.BO",
+        "frequency": "daily",
+        "addedAt": "2026-06-30T18:25:26.507Z",
+        "lsatSent": "2026-06-30T18:25:26.507Z"
+      }
+    ],
+    "subscribedAt": "2026-06-30T18:25:26.507Z"
+  }
+]

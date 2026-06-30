@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-bottom: 25px;
+    color: #1e3a8a;
+    font-size: 2.2rem;
+}
+
+/* Search Input */
+.stock {
+    width: 100%;
+    max-width: 420px;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.stock:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+/* Market Card */
+.market {
+    margin: 25px 0;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #e5e7eb;
+}
+
+.card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+    color: #1f2937;
+}
+
+.card h1 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin: 8px 0 12px 0;
+    color: #111827;
+}
+
+.card p {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.stats span {
+    background: #f8fafc;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+/* Suggestions Dropdown */
+.suggestions {
+    position: absolute;
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    max-height: 320px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+.suggestions.show {
+    display: block;
+}
+
+.suggestion {
+    padding: 14px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.2s;
+}
+
+.suggestion:hover {
+    background-color: #f0f9ff;
+}
+
+.suggestion strong {
+    color: #1e40af;
+}
+
+/* Email Section */
+.email-section {
+    margin-top: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: none; /* Hidden by default */
+}
+
+.email-section.show {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.emaillabel {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.emailinput {
+    flex: 1;
+    min-width: 280px;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.emailinput:focus {
+    border-color: #3b82f6;
+}
+
+/* Get Updates Button */
+.update {
+    padding: 12px 24px;
+    background-color: #dc2626;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.update:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* Chart Container */
+/* Chart Container */
+#chart {
+    margin-top: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 10px;
+    width: 100%;           /* Important */
+    max-width: 100%;       /* Important */
+    height: 580px;         /* Fixed height */
+    position: relative;    /* Important for chart */
+}
+
+
+/* Email Section */
+.email-section {
+    margin-top: 25px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: none; 
+}
+
+.email-section.show {
+    display: block;
+}
+
+.frequency-select {
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+}
+
+.frequency-select:focus {
+    border-color: #3b82f6;
+}
