@@ -26,15 +26,14 @@ Users can subscribe to their favorite stocks and receive periodic market updates
 
 ### Dashboard
 
-![Dashboard Screenshot](./screenshots/dashboard.png)
+![Dashboard Screenshot](./Screenshots/dashboard.png)
 
-### Generated Email Report
+### Email Report
+![Email Screenshot](./Screenshots/email-report.png)
 
-![Email Screenshot](./screenshots/email-report.png)
+### Workflow
 
-### Automation Workflow
-
-![Workflow Screenshot](./screenshots/workflow.png)
+![Workflow Screenshot](./Screenshots/workflow.png)
 
 ---
 
