@@ -196,7 +196,7 @@ app.post("/api/subscribe", async(req, res) => {
         symbol: symbol,
         frequency: frequency,
         addedAt: new Date().toISOString(),
-        lsatSent: new Date().toISOString()
+        lastSent: new Date().toISOString()
       });
     } else {
       const stockIndex = subscriptions[userIndex].stocks.findIndex(
@@ -290,6 +290,60 @@ app.get("/api/history/:symbol", async (req, res) => {
     });
   }
 });
+
+
+app.post("/api/update-last-sent",(req,res)=>{
+  try{
+  const {email,symbol} = req.body;
+  const filePath = path.join(__dirname,"subscriptions.json");
+  if(!fs.existsSync(filePath)){
+    return res.status(500).json({
+      sucess:false,
+      message:"subscription not found "
+    });
+  }
+  const subscriptions = JSON.parse(fs.readFileSync(filePath,"utf-8"));
+
+  const user = subscriptions.find(user=>user.email === email);
+
+  if(!user){
+    return res.status(404).json({
+          success: false,
+          message: "User not found"
+    });
+  }
+
+  const stock = user.stocks.find(stock=>stock.symbol === symbol);
+   if (!stock) {
+            return res.status(404).json({
+                success: false,
+                message: "Stock not found"
+            });
+    }
+
+        stock.lastSent = new Date().toISOString();
+
+        fs.writeFileSync(
+            filePath,
+            JSON.stringify(subscriptions, null, 2)
+        );
+
+        res.json({
+            success: true,
+            message: "lastSent updated successfully"
+        });
+  
+  }
+  catch(err){
+        console.error(err);
+
+        res.status(500).json({
+            success: false,
+            error: err.message
+        });
+  }
+  
+})
 
 app.get("/routes-test", (req, res) => {
   res.json({
